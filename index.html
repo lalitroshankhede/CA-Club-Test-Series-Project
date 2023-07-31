@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CA/CS Online Platform</title>
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid container-main ">
+
+        <nav class="navbar navbar-expand-md  navbar-dark container-nav ">
+            <img src="img/logo1.png" alt="" width="10%;" class="logo-img">
+            <a class="navbar-brand" href="#"> &nbsp;CA/CS Online Platform </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="schedule.pdf" target="_blank">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#syllabus">Syllabus </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#"> Downloads </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#"> Shop </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact"> Contact Us </a>
+                    </li>
+                </ul>
+                <button onclick="document.getElementById('id01').style.display='block'" class="btn-log">Log
+                    In</button> &nbsp;&nbsp;
+
+
+                <div id="id01" class="modal0">
+
+                    <form class="modal-content-main animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            <img src="user-img.jpg" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container-model flex-column">
+                            <div class="row">
+
+
+
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                </div>
+
+
+                            </div>
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                            </label><br>
+                            <button type="submit" class="btn-log">Login</button>
+                            <div class="container">
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+                <button onclick="document.getElementById('id02').style.display='block'"
+                    class="btn-log">Register</button>
+
+
+                <div id="id02" class="modal-2" id="">
+
+                    <form class="modal-content-main animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            <img src="user-img.jpg" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container-model">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="uname"><b>Name</b></label>
+                                    <input type="text" placeholder="Enter Name" name="uname" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="psw"><b>Confirm Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="mob"><b> Mobile No.</b></label>
+                                    <input type="text" placeholder="Enter Mobile.No" name="mob" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="ref"><b>Referral Code </b></label>
+                                    <input type="text" placeholder="Enter Referral Code " name="ref" required>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-">
+                                    <label for="icai"><b> ICAI Reg No. </b></label>
+                                    <input type="text" placeholder="Enter ICAI Reg No. " name="icai" required>
+
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-log">Register</button>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div class="container-fluid container-bg  ">
+        <div class="container ">
+            <div class="outer">
+                <div id="demo" class="carousel slide pt-5" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner text-center text-light pt-5 ">
+                        <div class="carousel-item active">
+
+
+
+                            <div class="typewriter pt-5">
+                                <h1> <strong style="color:#f2aa4cff;text-shadow:2px 2px 2px gray;"> CA CLUB Test Series
+                                    </strong> for CA Final (old and new course) </h1>
+                                <h1> CA Intermediate ( old & new course) </h1>
+                                <h1><strong style="color:#f2aa4cff;text-shadow:2px 2px 2px gray;"> secure your results
+                                        before final exams</strong></h1>
+                            </div>
+                            <p class="pt-2 mt-2">Build Skills with courses,certificates and degrees online from world
+                                class university
+                                and expert faculties.
+                            </p>
+
+                            <a href="#page-scroll"> <button class="join-btn">GET STARTED</button></a>
+
+                        </div>
+                        <div class="carousel-item">
+
+
+
+                            <div class="typewriter pt-5">
+                                <h1> Test series prepared by </h1>
+                                <h1> <strong style="color:#f2aa4cff;text-shadow:2px 2px 2px gray;">CA's and checked by
+                                        CA's </strong></h1>
+                            </div>
+                            <p class="pt-2 mt-2">We had such a great time in LA! We had such a great time in LA!</p>
+                            <br><br>
+                            <a href="#page-scroll"> <button class="join-btn">GET STARTED</button></a>
+
+
+                        </div>
+
+                    </div><br><br><br><br>
+                    <a class="carousel-control-prev prev-btn" href="#demo" data-slide="prev">
+                    </a>
+                    <a class="carousel-control-next next-btn" href="#demo" data-slide="next">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- id="page-scroll" -->
+
+    <div class="container-fluid  container-card " id="page-scroll">
+
+
+        <div class="container main-container-card">
+            <div class="row ">
+
+                <div class="col-sm-12 col-lg-3 card-column p-5 text-center">
+
+
+
+                    <h6 class="course-text">CA Final (New Course)</h6>
+                    <br>
+                    <a href="#plan_detials"> <button class="btn btn-primary">Details</button></a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        See Plan
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">CA Final ( New Course)</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2"></th>
+                                                <th>Step By Step Test Series</th>
+                                                <th> Solo Test series</th>
+                                                <th>Duo Test Series</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td>2 Part Tests+2 Full Syllabus Tests per Subject.</td>
+                                                <td>1 Full syllabus test for each subject</td>
+                                                <td>2 Full Syllabus Tests Per Subject.</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td colspan="2">Cost Per Subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Discount For more then one subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group I</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group II</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Both Group</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">EVALUATION IN 24 Hrs.</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">DETAILED ANALYSIS & REVIEW OF <br> EVERY ANSWER</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button onclick="document.getElementById('id03').style.display='block'"
+                                        style="width:auto;" class="btn-log">Enroll Now</button>
+
+                                    <div id="id03" class="modal_reg">
+
+                                        <form class="modal_content_reg animate" action="/action_page.php" method="post">
+                                            <div class="imgcontainer">
+                                                <span onclick="document.getElementById('id03').style.display='none'"
+                                                    class="close" title="Close Modal">&times;</span>
+                                                <img src="user-img.jpg" alt="Avatar" class="avatar">
+                                            </div>
+
+                                            <div class="container pb-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="uname"><b>Name</b></label>
+                                                        <input type="text" placeholder="Enter Name" name="uname"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="email"><b>Email</b></label>
+                                                        <input type="text" placeholder="Enter Email" name="email"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Confirm Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="mob"><b> Mobile No.</b></label>
+                                                        <input type="text" placeholder="Enter Mobile.No" name="mob"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="ref"><b>Referral Code </b></label>
+                                                        <input type="text" placeholder="Enter Referral Code " name="ref"
+                                                            required>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="icai"><b> ICAI Reg No. </b></label>
+                                                        <input type="text" placeholder="Enter ICAI Reg No. " name="icai"
+                                                            required>
+
+                                                    </div>
+
+
+                                                </div>
+                                                <button type="submit" class="btn-log">Register</button>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-3 card-column p-5 text-center">
+
+
+
+                    <h6 class="course-text">CA Final (Old Course)</h6>
+                    <br>
+                    <a href="#plan_detials"> <button class="btn btn-primary">Details</button></a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        See Plan
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">CA Final ( Old Course)</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2"></th>
+                                                <th>Step By Step Test Series</th>
+                                                <th> Solo Test series</th>
+                                                <th>Duo Test Series</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td>2 Part Tests+2 Full Syllabus Tests per Subject.</td>
+                                                <td>1 Full syllabus test for each subject</td>
+                                                <td>2 Full Syllabus Tests Per Subject.</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td colspan="2">Cost Per Subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Discount For more then one subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group I</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group II</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Both Group</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">EVALUATION IN 24 Hrs.</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">DETAILED ANALYSIS & REVIEW OF <br> EVERY ANSWER</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button onclick="document.getElementById('id03').style.display='block'"
+                                        style="width:auto;" class="btn-log">Enroll Now</button>
+
+                                    <div id="id03" class="modal_reg">
+
+                                        <form class="modal_content_reg animate" action="/action_page.php" method="post">
+                                            <div class="imgcontainer">
+                                                <span onclick="document.getElementById('id03').style.display='none'"
+                                                    class="close" title="Close Modal">&times;</span>
+                                                <img src="user-img.jpg" alt="Avatar" class="avatar">
+                                            </div>
+
+                                            <div class="container pb-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="uname"><b>Name</b></label>
+                                                        <input type="text" placeholder="Enter Name" name="uname"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="email"><b>Email</b></label>
+                                                        <input type="text" placeholder="Enter Email" name="email"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Confirm Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="mob"><b> Mobile No.</b></label>
+                                                        <input type="text" placeholder="Enter Mobile.No" name="mob"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="ref"><b>Referral Code </b></label>
+                                                        <input type="text" placeholder="Enter Referral Code " name="ref"
+                                                            required>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="icai"><b> ICAI Reg No. </b></label>
+                                                        <input type="text" placeholder="Enter ICAI Reg No. " name="icai"
+                                                            required>
+
+                                                    </div>
+
+
+                                                </div>
+                                                <button type="submit" class="btn-log">Register</button>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-sm-12 col-lg-3 card-column p-5 text-center">
+
+
+                    <h6 class="course-text"> CA Intermediate</h6>
+                    <br>
+                    <a href="#plan_detials"> <button class="btn btn-primary">Details</button></a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        See Plan
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">CA Intermediate</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2"></th>
+                                                <th>Step By Step Test Series</th>
+                                                <th> Solo Test series</th>
+                                                <th>Duo Test Series</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td>2 Part Tests+2 Full Syllabus Tests per Subject.</td>
+                                                <td>1 Full syllabus test for each subject</td>
+                                                <td>2 Full Syllabus Tests Per Subject.</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td colspan="2">Cost Per Subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Discount For more then one subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group I</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group II</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Both Group</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">EVALUATION IN 24 Hrs.</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">DETAILED ANALYSIS & REVIEW OF <br> EVERY ANSWER</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button onclick="document.getElementById('id03').style.display='block'"
+                                        style="width:auto;" class="btn-log">Enroll Now</button>
+
+                                    <div id="id03" class="modal_reg">
+
+                                        <form class="modal_content_reg animate" action="/action_page.php" method="post">
+                                            <div class="imgcontainer">
+                                                <span onclick="document.getElementById('id03').style.display='none'"
+                                                    class="close" title="Close Modal">&times;</span>
+                                                <img src="user-img.jpg" alt="Avatar" class="avatar">
+                                            </div>
+
+                                            <div class="container pb-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="uname"><b>Name</b></label>
+                                                        <input type="text" placeholder="Enter Name" name="uname"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="email"><b>Email</b></label>
+                                                        <input type="text" placeholder="Enter Email" name="email"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Confirm Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="mob"><b> Mobile No.</b></label>
+                                                        <input type="text" placeholder="Enter Mobile.No" name="mob"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="ref"><b>Referral Code </b></label>
+                                                        <input type="text" placeholder="Enter Referral Code " name="ref"
+                                                            required>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="icai"><b> ICAI Reg No. </b></label>
+                                                        <input type="text" placeholder="Enter ICAI Reg No. " name="icai"
+                                                            required>
+
+                                                    </div>
+
+
+                                                </div>
+                                                <button type="submit" class="btn-log">Register</button>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-sm-12 col-lg-3 card-column p-5 text-center">
+
+
+                    <h6 class="course-text">CA IPCC </h6>
+                    <br>
+                    <a href="#plan_detials"> <button class="btn btn-primary">Details</button></a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        See Plan
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">CA IPCC</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2"></th>
+                                                <th>Step By Step Test Series</th>
+                                                <th> Solo Test series</th>
+                                                <th>Duo Test Series</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td>2 Part Tests+2 Full Syllabus Tests per Subject.</td>
+                                                <td>1 Full syllabus test for each subject</td>
+                                                <td>2 Full Syllabus Tests Per Subject.</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td colspan="2">Cost Per Subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Discount For more then one subject</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group I</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Group II</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Cost For Both Group</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">EVALUATION IN 24 Hrs.</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">DETAILED ANALYSIS & REVIEW OF <br> EVERY ANSWER</td>
+
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                                <td><a href="dummy.pdf">View Schedule Plan</a> <br> <a
+                                                        href="dummy.pdf">View Unschedule Plan</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button onclick="document.getElementById('id03').style.display='block'"
+                                        style="width:auto;" class="btn-log">Enroll Now</button>
+
+                                    <div id="id03" class="modal_reg">
+
+                                        <form class="modal_content_reg animate" action="/action_page.php" method="post">
+                                            <div class="imgcontainer">
+                                                <span onclick="document.getElementById('id03').style.display='none'"
+                                                    class="close" title="Close Modal">&times;</span>
+                                                <img src="user-img.jpg" alt="Avatar" class="avatar">
+                                            </div>
+
+                                            <div class="container pb-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="uname"><b>Name</b></label>
+                                                        <input type="text" placeholder="Enter Name" name="uname"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="email"><b>Email</b></label>
+                                                        <input type="text" placeholder="Enter Email" name="email"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="psw"><b>Confirm Password</b></label>
+                                                        <input type="password" placeholder="Enter Password" name="psw"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="mob"><b> Mobile No.</b></label>
+                                                        <input type="text" placeholder="Enter Mobile.No" name="mob"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="ref"><b>Referral Code </b></label>
+                                                        <input type="text" placeholder="Enter Referral Code " name="ref"
+                                                            required>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-">
+                                                        <label for="icai"><b> ICAI Reg No. </b></label>
+                                                        <input type="text" placeholder="Enter ICAI Reg No. " name="icai"
+                                                            required>
+
+                                                    </div>
+
+
+                                                </div>
+                                                <button type="submit" class="btn-log">Register</button>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
+                <img src="img/topper.png" alt="" width="100%;">
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6 tab-panel pb-5 mb-5 mt-2">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item w-50">
+                        <a class="nav-link active font-weight-bold " data-toggle="tab" href="#home">Latest News</a>
+                    </li>
+                    <li class="nav-item w-50 bg-secondary">
+                        <a class="nav-link text-dark font-weight-bold " data-toggle="tab" href="#menu1">Events</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+
+                        <marquee behavior="scroll" direction="up" loop="infinite" height="400px"
+                            onmouseover="this.stop();" onmouseout="this.start();">
+                            <ul>
+                                <a href="#">
+                                    <li style="color:red;"> <img src="Animated Gif New (43).gif" alt=""> A Three-day
+                                        International Interdisciplinary Conference to be held in January 19-21, 2023.
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"><img src="Animated Gif New (43).gif" alt=""> Notice regarding
+                                        application for Outstanding Award to be given to Teachers under Teacher Welfare
+                                        Fund.</li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"> <img src="Animated Gif New (43).gif" alt=""> Application
+                                        form for the Best Award to be given to Teachers under Teacher Welfare Fund.</li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"> <img src="Animated Gif New (43).gif" alt="">Application Form
+                                        for Best NCC Cadets Award</li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"> <img src="Animated Gif New (43).gif" alt="">Corrigendum
+                                        regarding admission date extended for First year Undergraduate</li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"> <img src="Animated Gif New (43).gif" alt="">Reminder Letter
+                                        regarding Best Student Award for the Academic Section 2019-20.</li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"> <img src="Animated Gif New (43).gif" alt="">National Webinar
+                                        on "Cyber Crime and Cyber Awareness" on 22 June 2021.</li>
+                                </a>
+                                <a href="#">
+                                    <li style="color:red;"><img src="Animated Gif New (43).gif" alt=""> National Webinar
+                                        on IPR-Public Policy in India" organised by IPR Cell, RTMNU in association with
+                                        IQAC, RTMNU & PGTD of Law RTMNU on 26th April 2021.</li>
+                                </a>
+                            </ul>
+
+                        </marquee>
+
+
+                    </div>
+                    <div id="menu1" class="container tab-pane fade ">
+                        <marquee behavior="scroll" direction="down">
+                            <ul>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                                <a href="#">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iste!</li>
+                                </a>
+                            </ul>
+                        </marquee>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+
+        <h1 class="text-center mb-5 font-weight-bold text-heading">Why CA Club</h1>
+        <table class="table table-bordered table-responsive ">
+            <thead>
+                <tr>
+                    <th>Particulars
+                    </th>
+                    <th colspan="2">No.Test
+                    </th>
+                    <th>Ordinary Test Series
+                    </th>
+                    <th>CA CLUB Test Series
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Test Paper
+                    </td>
+                    <td colspan="2">*
+                    </td>
+                    <td>Predicatable
+                    </td>
+                    <td>New variety of questions based on ICAI pattern
+                    </td>
+                </tr>
+                <tr>
+                    <td>Evaluation
+                    </td>
+                    <td colspan="2">*
+                    </td>
+                    <td>4-5 Days
+                    </td>
+                    <td>With in 48hr of test conducted
+                    </td>
+                </tr>
+                <tr>
+                    <td>Counselling
+                    </td>
+                    <td colspan="2">*
+                    </td>
+                    <td> </td>
+                    <td>Get Expert guidance for concept clarity
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Detailed Analysis of Every Answer
+
+                    </td>
+                    <td colspan="2">*
+                    </td>
+                    <td> </td>
+                    <td>Detailed analysis of every answer & comment on it by Experts
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Chapter wise and Full Syllabus Performance
+
+                    </td>
+                    <td colspan="2">*
+                    </td>
+                    <td> </td>
+                    <td>Covers Step by Step Practice & gives complete preparedness for Exams
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Makers-Checkers Team
+
+                    </td>
+                    <td colspan="2">*
+                    </td>
+                    <td>Any Other
+                    </td>
+                    <td>Most experienced team (Chartered Accountants only) for making & checking of test papers
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <div class="container-fluid mt-5 pt-5 pb-5 main_about_block">
+        <div class="container">
+            <h1 class="text-center font-weight-bold text-heading">ABOUT CA CLUB Test Series
+            </h1>
+            <div class="row ">
+                <div class="col-2"></div>
+                <div class="col-sm-12 col-md-8 col-lg-8 about-block">
+                    <ul>
+                        <li> <i class="fas fa-angle-right"></i>CA CLUB Test Series is a pan India test series for CA
+                            Exams
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>CA CLUB Test Series is the path from “Being in CA” to
+                            “Being a CA”
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>CA CLUB Test Series aims to provide maximum benefits to
+                            the students in terms of &nbsp;&nbsp;&nbsp;&nbsp; preparation and guidance
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>CA CLUB Test Series is conducting chapter wise and full
+                            syllabus test series for CA final (new & &nbsp;&nbsp;&nbsp;&nbsp; old course) and CA
+                            Intermediate (new & old course)
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>We have most experienced team (Chartered Accountants
+                            only) for making & checking of test papers
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    Timely revision of course
+                </div>
+                <div class="col-md-1">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2">
+                    CA CLUB Test Series
+                </div>
+                <div class="col-md-1">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-2">
+                    Proper Expert's guidance
+                </div>
+                <div class="col-md-1">
+                    <i class='fas fa-equals' style='font-size:20px'></i>
+                </div>
+                <div class="col-md-2">
+                    <div class="sucess font-weight-bold" style=" color:#f2aa4cff;">Key to success</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5" id="plan_detials">
+        <div class="container">
+            <h1 class=" text-center mb-5 font-weight-bold text-heading">PLAN DETAIL'S </h1>
+
+            <div class="card-deck mt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card card-plan  ">
+                            <div class="card-body text-center">
+                                <h4>Step By Step Test Series
+                                </h4>
+                                <ul>
+                                    <li>Part test series include 2 part tests along with two full syllabus test for each
+                                        subject.
+                                    </li>
+
+                                    <li>Part Test helps in step by step practice for exams and helps to your weak area
+                                        in detail while full syllabus test helps to identify the overall need.
+                                    </li>
+                                    <li>Helps in identifying Knowledge gaps of each Step.
+                                    </li>
+                                    <li>Total 32 test (4*8 subjects) for both groups.
+                                    </li><br>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card  card-plan  ">
+                            <div class="card-body text-center">
+                                <h4>DUO Test Series
+                                </h4>
+                                <ul>
+                                    <li>DUO test series include 2 Full syllabus tests for each subject
+                                    </li>
+                                    <li>DUO test series helps in cementing of knowledge.
+                                    </li>
+                                    <li>Ready to prepare Exams ‘s environment before your real ICAI exams.
+                                    </li>
+                                    <li>DUO test series prepares you for exam readiness.
+                                    </li>
+
+                                    <li>Total 16 tests (2*8 subjects) for both groups
+                                    </li>
+                                    <li>Full syllabus test of 3 Hrs. each.
+                                    </li><br>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="card  card-plan ">
+                            <div class="card-body text-center">
+                                <h4>SOLO Test Series
+                                </h4>
+                                <ul>
+                                    <li>SOLO test series includes 1 full syllabus test of each subject.
+                                    </li>
+                                    <li>SOLO test series helps in identifying the weak areas in first attempt.
+                                    </li>
+                                    <li>Ready to prepare Exams ‘s environment before your real ICAI exams.
+                                    </li>
+                                    <li>SOLO test series can reduce exam anxiety.
+                                    </li>
+                                    <li>Total 8 test (1*8 subjects) for both groups.
+                                    </li>
+                                    <li>SOLO test series include full syllabus test of 3 Hrs. each.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid mt-5 pt-5 pb-5 main_howwork_block">
+        <div class="container">
+            <h1 class=" text-center mb-5 font-weight-bold text-heading">HOW IT WORKS
+
+            </h1>
+            <div class="row ">
+                <div class="col-2"></div>
+                <div class="col-sm-12 col-md-8 col-lg-8 howwork-block">
+                    <ul>
+                        <li> <i class="fas fa-angle-right"></i>Register for CA CLUB Test Series
+
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>Download the test paper/question paper from your login or
+                            registered email id.
+
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>Answers to be written on notebook
+
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>Click photo or scan the pages serial wise
+
+                        </li>
+                        <li> <i class="fas fa-angle-right"></i>Upload the sheets as pdf in your login or mail to us
+
+                        </li>
+
+                        <li> <i class="fas fa-angle-right"></i>Get checked answer sheets with in 48 hrs. of test
+                            conducted along with expert’s reviews
+
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row   pt-3  ">
+                <div class="col-1"></div>
+                <div class="col-sm-12 col-md-10 col-lg-10">
+                    <p class="text-light"> <strong style="  color:#f2aa4cff;"> Note: </strong>
+                        <ul>
+                            <li> <strong style="  color:#f2aa4cff;">Unscheduled Test:</strong> Students can appear test
+                                as per their preparation as & when convenient to them.
+                            </li>
+                            <li> <strong style="  color:#f2aa4cff;"> Scheduled Test:</strong> Students can appear test
+                                as per our Expert guided schedule. For CA final new syllabus, test series would be
+                                available only for 7 subjects. (Elective subject is not included in the test series)
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid pt-5 mt-5  container-courses" id="syllabus">
+
+        <div class="container">
+
+            <h1 class=" text-center mb-5 font-weight-bold text-heading">Our Courses</h1>
+            <h2 class=" text-uppercase text-center font-weight-medium mb-3  text-heading"> <u>Charted Accountant</u>
+            </h2>
+
+            <div class="row pt-5">
+                <div class=" col-sm-12 col-md-12 col-lg-4   pb-1 text-center box-1">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4  "
+                        style="height: 300px;">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
+                            style="width: 100px; height: 100px;background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);"
+                            id="box-model">
+                            <i class="fa fa-users text-light" style="font-size:40px"></i>
+                        </div>
+                        <h4 class="font-weight-bold m-0" id="text-3">CA Foundation</h4> <br>
+                        <p style="columns: #3d3d3d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti, suscipit.</p>
+
+                        <button id="myBtn-1">Open Modal</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal-1" class="modal-1">
+
+                            <!-- Modal content -->
+                            <div class="modal-content-1">
+                                <div class="modal-header-1">
+                                    <span class="close-1">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body-1">
+                                    <p>Some text in the Modal Body</p>
+                                    <p>Some other text...</p>
+                                </div>
+                                <div class="modal-footer-1">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 pb-1 text-center box-1">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4  "
+                        style="height: 300px;">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
+                            style="width: 100px; height: 100px;background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);"
+                            id="box-model">
+                            <i class="fa fa-trophy text-light" style="font-size:40px"></i>
+                        </div>
+                        <h4 class="font-weight-bold m-0" id="text-3">CA Final Old/New</h4><br>
+                        <p style="columns: #3d3d3d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti, suscipit.</p>
+                        <button id="myBtn-2">Open Modal</button>
+                        <!-- The Modal -->
+                        <div id="myModal-2" class="modal-2">
+
+                            <!-- Modal content -->
+                            <div class="modal-content-2">
+                                <div class="modal-header-2">
+                                    <span class="close-2">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body-2">
+                                    <p>Some text in the Modal Body</p>
+                                    <p>Some other text...</p>
+                                </div>
+                                <div class="modal-footer-2">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 pb-1 text-center box-1">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 "
+                        style="height: 300px;">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
+                            style="width: 100px; height: 100px;background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);"
+                            id="box-model">
+                            <i class="fa fa-graduation-cap text-light" style="font-size:40px"></i>
+
+                        </div>
+                        <h4 class="font-weight-bold m-0" id="text-3">CA Inter/IPCC</h4><br>
+                        <p style="columns: #3d3d3d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti, suscipit.</p>
+                        <button id="myBtn-3">Open Modal</button>
+                        <!-- The Modal -->
+                        <div id="myModal-3" class="modal-3">
+
+                            <!-- Modal content -->
+                            <div class="modal-content-3">
+                                <div class="modal-header-3">
+                                    <span class="close-3">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body-3">
+                                    <p>Some text in the Modal Body</p>
+                                    <p>Some other text...</p>
+                                </div>
+                                <div class="modal-footer-3">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid container-courses">
+
+        <div class="container">
+            <h2 class=" text-uppercase text-center font-weight-medium mb-3  text-heading"> <u>Company Secreatery</u>
+            </h2>
+
+            <div class="row pt-5">
+                <div class="  col-sm-12 col-md-12 col-lg-4  pb-1 text-center box-1 ">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4  "
+                        style="height: 300px;">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
+                            style="width: 100px; height: 100px;background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);"
+                            id="box-model">
+                            <i class="fa fa-users text-light" style="font-size:40px"></i>
+                        </div>
+                        <h4 class="font-weight-bold m-0" id="text-3">CS Foundation</h4> <br>
+                        <p style="columns: #3d3d3d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti, suscipit.</p>
+                        <button id="myBtn-4">Open Modal</button>
+                        <!-- The Modal -->
+                        <div id="myModal-4" class="modal-4">
+
+                            <!-- Modal content -->
+                            <div class="modal-content-4">
+                                <div class="modal-header-4">
+                                    <span class="close-4">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body-4">
+                                    <p>Some text in the Modal Body</p>
+                                    <p>Some other text...</p>
+                                </div>
+                                <div class="modal-footer-4">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 pb-1 text-center box-1">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4  "
+                        style="height: 300px;">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
+                            style="width: 100px; height: 100px;background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);"
+                            id="box-model">
+                            <i class="fa fa-trophy text-light" style="font-size:40px"></i>
+                        </div>
+                        <h4 class="font-weight-bold m-0" id="text-3">CS Final Old/New</h4><br>
+                        <p style="columns: #3d3d3d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti, suscipit.</p>
+                        <button id="myBtn-5">Open Modal</button>
+                        <!-- The Modal -->
+                        <div id="myModal-5" class="modal-5">
+
+                            <!-- Modal content -->
+                            <div class="modal-content-5">
+                                <div class="modal-header-5">
+                                    <span class="close-5">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body-5">
+                                    <p>Some text in the Modal Body</p>
+                                    <p>Some other text...</p>
+                                </div>
+                                <div class="modal-footer-5">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 pb-1 text-center box-1">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4  "
+                        style="height: 300px;">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
+                            style="width: 100px; height: 100px;background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);"
+                            id="box-model">
+                            <i class="fa fa-graduation-cap text-light" style="font-size:40px"></i>
+
+                        </div>
+                        <h4 class="font-weight-bold m-0" id="text-3">CS Inter/IPCC</h4><br>
+                        <p style="columns: #3d3d3d;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti, suscipit.</p>
+                        <button id="myBtn-6">Open Modal</button>
+                        <!-- The Modal -->
+                        <div id="myModal-6" class="modal-6">
+
+                            <!-- Modal content -->
+                            <div class="modal-content-6">
+                                <div class="modal-header-6">
+                                    <span class="close-6">&times;</span>
+                                    <h2>Modal Header</h2>
+                                </div>
+                                <div class="modal-body-6">
+                                    <p>Some text in the Modal Body</p>
+                                    <p>Some other text...</p>
+                                </div>
+                                <div class="modal-footer-6">
+                                    <h3>Modal Footer</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 m-0 p-0 ">
+        <h1 class="  text-center mb-5 font-weight-bold text-heading">Our Faculty</h1>
+        <div class="container ">
+            <div class="row  ">
+
+                <div class="col-sm-12 col-md-8 col-lg-6    ">
+                    <img src="img/person/p1.jpg" class="rounded-circle" alt="" width="200px" height="200px;">
+                    <h3>Jon Doe</h3>
+                    <h4>Charted Accountant</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat dignissimos
+                        voluptatem excepturi nihil, officiis libero placeat corrupti similique, harum sed, adipisci
+                        rerum fugit? Ipsa aperiam ipsum iure, nobis quis dicta perspiciatis, nulla sequi ea dolore, est
+                        suscipit quaerat repellat recusandae alias maiores sit facilis cupiditate saepe veniam maxime
+                        natus?</p>
+
+                    <ul class="icon-list">
+                        <li class="icon-item">
+                            <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="icon-item">
+                            <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+
+                        <li class="icon-item">
+                            <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="icon-item">
+                            <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6  ">
+                    <div class="row ">
+                        <div class="col-sm-12 col-md-6 col-lg-6  ">
+                            <img src="img/person/p2.jpg" class="rounded-circle" alt="" width="100px" height="100px;">
+                            <h3>Jagrit Karmani</h3>
+                            <h4>Charted Accountant</h4>
+                            <p>Jagrit Karmani is a qualified Chartered Accountant in 2016 and Cost Account...</p>
+                            <ul class="icon-list">
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+
+
+
+                            <img src="img/person/p3.jpg" class="rounded-circle" alt="" width="100px" height="100px;">
+                            <h3>CA Rekha Jain</h3>
+                            <h4>Charted Accountant</h4>
+                            <p>CA Rekha jain is a qualified Chartered Accountant in 2010,Disa qualified in...</p>
+                            <ul class="icon-list">
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+
+                            <img src="img/person/p4.jpg" class="rounded-circle" alt="" width="100px" height="100px;">
+                            <h3>CS Kulbhushan Patil</h3>
+                            <h4>Company Secretery</h4>
+                            <p>css2?family Kulbhushan Patil is a qualified Chartered Accountant. Kulbhushan is a B....
+                            </p>
+                            <ul class="icon-list">
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+
+
+
+                            <img src="img/person/p5.jpg" class="rounded-circle" alt="" width="100px" height="100px;">
+                            <h3>CS Rashi Goel</h3>
+                            <h4>Company Secretery</h4>
+                            <p>CS Rashi Goel is a Chartered Accountant by profession having cleared her CA...</p>
+                            <ul class="icon-list">
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="icon-item">
+                                    <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="img/wave.svg" alt="" style="margin-top:-100px;">
+    </div>
+
+    <div class="container-fluid   container-testimunal">
+        <h1 class="text-center mb-5 text-light font-weight-bold pt-2 text-heading">Our Clints Say</h1>
+        <div class=" p-5 mx-auto mt-3 mb-3 text-light">
+            <div id="carouselTestimonial" class="carousel carousel-testimonial slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselTestimonial" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselTestimonial" data-slide-to="1"></li>
+                    <li data-target="#carouselTestimonial" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item text-center active">
+                        <div class="carousel-testimonial-img p-1 rounded-circle m-auto">
+                            <img class="rounded-circle" src="img/person/p2.jpg" alt="First slide" width="120px;"
+                                height="120px">
+                        </div>
+                        <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">SARA A. MORAN</strong></h5>
+                        <h6 class="text-warning m-0">Charted Accountant</h6>
+                        <p class="m-0 pt-3 text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu
+                            sem tempor,
+                            consectetur adipiscing elit varius quam at, luctus dui. Mauris magna metus consectetur
+                            adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                            consectetur adipiscing elit varius quam at, luctus dui. Mauris magna metus consectetur
+                            adipiscing elit. 😍✌</p>
+                        <br><br>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <div class="carousel-testimonial-img p-1  rounded-circle m-auto">
+                            <img class="rounded-circle" src="img/person/p5.jpg" alt="Second slide" width="120px;"
+                                height="120px">
+                        </div>
+                        <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">STEVE FONSI</strong></h5>
+                        <h6 class="text-warning m-0">Company Secretery</h6>
+                        <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                            consectetur adip varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis
+                            vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                            consectetur adipiscing elit varius quam at, luctus dui. Mauris magna metus consectetur
+                            adipiscing elit.😘👌</p>
+                        <br><br>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <div class="carousel-testimonial-img p-1   rounded-circle m-auto">
+                            <img class=" rounded-circle" src="img/person/p4.jpg" alt="Third slide" width="120px;"
+                                height="120px">
+                        </div>
+                        <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">SANDRA M. GARCIA</strong></h5>
+                        <h6 class="text-warning m-0">Company Secretery</h6>
+                        <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                            varius quam at, consectetur adipiscing elit consectetur adipiscing elit luctus dui. Mauris
+                            magna metusLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                            consectetur adipiscing elit varius quam at, luctus dui. Mauris magna metus consectetur
+                            adipiscing elit.🤩👍</p>
+                        <br><br>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
+
+                </a>
+                <a class="carousel-control-next" href="#carouselTestimonial" role="button" data-slide="next">
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid container-sample mb-5 w-100  ">
+        <div class="container pt-5 pb-5">
+            <h2 class="text-danger pt-5">Facing issue in getting a good score?</h2>
+            <h3 class="text-light">Answer these questions and GM Experts will guide you !!</h3>
+            <a href="dummy.pdf" target="blank"> <button class="download-btn">Pre Assesment Form <i
+                        class="fa fa-download"></i></button></a>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid " id="contact">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+
+                <div class="col-12">
+                    <div class="main-from   p-5 pb-5  w-100   ">
+                        <h1 class="  text-center mb-5 text-light font-weight-bold text-heading">Contact Us</h1>
+                        <h2 class="text-light text-center">Have Some Queries ?</h2>
+                        <form class="pt-5">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6 mt-3 ">
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Name"
+                                        name="name">
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 mt-3 ">
+                                    <input type="text" class="form-control" placeholder="Enter Mobile.No" name="mob">
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12 mt-3  ">
+                                    <input type="text" class="form-control" id="email" placeholder="Enter Email"
+                                        name="email">
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-12 mt-3 ">
+                                    <textarea class="form-control" name="" id="" rows="5"
+                                        placeholder="Your massage"></textarea>
+                                </div>
+                                <button class="btn mt-2 send-btn ">SEND</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid  text-white mt-5 pt-5 px-sm-3 px-md-5 w-100 main-footer" id="align-adj-2">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6  ">
+                <a href="">
+                    <p class="text-secondary  " style="font-size:20px;font-weight:bold;"> <img src="img/logo1.png"
+                            alt="" width="170px" height="120px;"></p>
+                </a>
+                <p>Evaluate yourself in one go. Presenting CA CLUB Test Series for CA Final, CA Intermediate.Test papers
+                    under one roof with the most experienced team that evaluates.</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="https://in.linkedin.com/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white mb-4">Contact info </h4>
+
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Nagpur, Maharashtra </p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+00 00 000</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+
+                    <a class="text-white mb-2" href="career.html"><i class="fa fa-angle-right mr-2"></i>Test Series</a>
+
+                    <a class="text-white mb-2" href="faq.html"><i class="fa fa-angle-right mr-2"></i>Blogs</a>
+                    <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white mb-4">Download Our App</h4>
+                <a href="https://play.google.com/store" target="_blank"><img src="css/googleplay.png" alt=""
+                        width="163px"></a>
+                <br><br>
+                <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="css/apple.svg" alt=""
+                        width="163px"></a><br><br>
+                <h4 class="text-white mb-4">Payment Options</h4>
+                <img src="img/payment-icons.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid bg-dark text-white py-4 px-sm-3 px-md-5">
+        <p class="m-0 text-center text-white">
+            &copy; <a class="text-white font-weight-medium" href="https://caclubtestseries.in/">caclubtestseries.in</a>.
+            All Rights Reserved.
+            Designed by <a href="#" style="color:white;"> websitename</a>
+
+        </p>
+    </div>
+
+
+
+    <a href="#" class="btn btn-lg back-to-top  "
+        style="background-image: linear-gradient(to left bottom, #c62164, #b7226b, #a72570, #962973, #842c74);  ">
+        <i class="fa fa-angle-double-up" style="color:white;"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Get the modal
+        var modal0 = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal0) {
+                modal0.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal_reg = document.getElementById('id03');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal_reg) {
+                modal_reg.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var course1 = document.getElementById("myModal-1");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn-1");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-1")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            course1.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            course1.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == course1) {
+                course1.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var course2 = document.getElementById("myModal-2");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn-2");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-2")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            course2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            course2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == course2) {
+                course2.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <script>
+        // Get the modal
+        var course3 = document.getElementById("myModal-3");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn-3");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-3")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            course3.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            course3.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == course3) {
+                course3.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+
+
+    <script>
+        // Get the modal
+        var course4 = document.getElementById("myModal-4");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn-4");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-4")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            course4.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            course4.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == course4) {
+                course4.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <script>
+        // Get the modal
+        var course5 = document.getElementById("myModal-5");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn-5");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-5")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            course5.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            course5.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == course5) {
+                course5.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+
+    <script>
+        // Get the modal
+        var course6 = document.getElementById("myModal-6");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn-6");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-6")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            course6.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            course6.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == course6) {
+                course6.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
