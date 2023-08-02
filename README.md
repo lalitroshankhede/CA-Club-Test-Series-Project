@@ -1,5 +1,6 @@
 # CA-Club-Test Series Website
 
+Visit Site : https://ca-club-test-series.netlify.app/
 
 ## Introduction
 
@@ -52,7 +53,7 @@ Getting started with CA-Club-Test Series is easy:
 ## Connect with Us
 We are committed to providing the best experience for our users. If you encounter any issues or have suggestions to improve the CA-Club-Test Series website, please don't hesitate to contact our support team.
 
-- **Email:** support@ https://ca-club-test-series.netlify.app/
+- **Email:** lalitroshankhede99@gmail.com
 - **Phone:** +91 8788676161
 
 We value your feedback and are continuously working to enhance your test preparation journey.
